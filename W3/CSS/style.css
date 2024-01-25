@@ -1,0 +1,38 @@
+<style>
+        h1{
+            color: red;
+            text-decoration: underline;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #Container{
+            width: 1000px;
+            border: 2px solid red;
+        }
+        body,html{
+            display: flex;
+            justify-content: center;
+            background-color: cadetblue;
+        }
+        #Nav{
+            text-align: center;
+        }
+        .nav-list{
+            list-style: none;
+            display: inline;
+            text-align: center;
+            padding: 15px;
+        }
+        #Header{border: 2px solid blue; text-align: center;}
+        #Content{border:2px solid red; height: 610px;}
+        #Footer{border: 2px solid violet; text-align: center;
+        }
+        .section-text{
+            width: 750px; 
+            float: left;
+            padding-left: 10px;
+        }
+        img{
+            float:left;
+        }
+        #section-header{padding-left: 20px;}
+    </style>
