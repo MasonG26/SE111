@@ -14,29 +14,112 @@
 </head>
 <body>
     <!--Build your Table and Form here-->
+<form action="confirm.html" method="get"></form>    
+    <table>
+    <thead>
+        <tr>
+            <td>Labels</td>
+            <td>Form Fields</td>
+        </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>Parent/Guardian Name</td><!--Label-->
+        <td>
+            <input type="text" placeholder="First Name..." name="g-first" maxlength="20" required id="g-first">
+            <br>
+            <input type="text" placeholder="Last Name..." name="g-last" maxlength="20" required id="g-last">
+        </td>
+    </tr>
+    <tr>
+        <td><!--Label-->
+            Child's First Name
+        </td>
+        <td><!--Field-->
+            <input type="text" placeholder="Child's First Name..." name="c-first" required id="c-first">
+        </td>
+    </tr>
+<tr>
+<td>Childs Age</td>
+<td><input type="number" required placeholder="#" name="age" id="age"></td>
+</tr>
+
+<tr>
+<td style="font-size: 300%;"><b>Date and Time</b></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Date</td><!--Label-->
+<td>
+    <input type="date" placeholder="mm/dd/yyyy" name="date" required>
+</td>
+</tr>
+
+<tr>
+    <td>Start Time</td><!--Label-->
+    <td><input type="time" name="time" required id="s-time"></td>
+
+</tr>
+
+<tr>
+<td>Number Of Guests</td>
+<td><input type="number" name="guests" value="5"></td>
+
+<tr><td style="font-size: 300%;">Food</td>
+<td></td></tr>
+
+<tr>
+<td>Size</td><!--Label-->
+<td width="75px"><input type="radio" name="size" value="sm" id="sm"><label for="sm">sm</label>
+<input type="radio" name="size" value="md" id="md"><label for="md">md</label>
+<input type="radio" name="size" value="lg" id="lg"><label for="lg">lg</label></td>
+</tr>
+
+<tr>
+<td>Drinks</td><!--Label-->
+<td><input type="checkbox" name="drink1" id="drink1" value="coke" checked><label for="drink1">Coke</label><br>
+
+<input type="checkbox" name="drink2" id="drink2" value="Sprite"><label for="drink2">Sprite</label><br>
+
+<input type="checkbox" name="drink3" id="drink3" value="Fruit Punch"><label for="drink3">Fruit Punch</label><br>
+
+<input type="checkbox" name="drink4" id="drink4" value="Lemonade"><label for="drink4">Lemonade</label><br>
+
+<input type="checkbox" name="drink5" id="drink5" value="Iced Tea"><label for="drink5">Iced Tea</label><br></td>
     
-<table>
-<form action="confirm.html" method="get"></form>
+</tr>
 
+<tr>
+<td>Cake</td><!--Label-->
+<td><select name="cake" id="cake"><option value="Vanilla" selected>Vanilla</option>
+    <option value="Chocolate">Chocolate</option>
+    <option value="Bring Your Own">Bring Your Own</option></select>
+</td>
+</tr>
 
+<tr>
+<td>Color Scheme</td><!--Label-->
+<td><input type="color" name="colors" id="colors"></td>
+</tr>
+<tr>
+<td>Additional Comments</td><!--Label-->
+<td>
+<textarea name="comments" id="comments" cols="30" rows="3" placeholder="Please add any additional comments"></textarea>
+</td>
+</tr>
 
+<tr>
+<td></td>
+<td>
+    <a href="./confirm.html"><input type="submit" name="submit" id="submit" value="submit"></a>
+</td>
+</tr>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </tbody>
+    </table>
 </form>
-</table>
-
 
 
 </body>
