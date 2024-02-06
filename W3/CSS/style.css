@@ -70,3 +70,26 @@ img {
 
 
 }
+table{
+border: 1px solid black;
+margin-left: 150px;
+width: 650px;
+border-collapse: collapse;
+
+}
+td{
+border: 1px solid black;
+
+
+}
+
+table-data, tr:nth-child(odd){
+
+background-color: #d5d5d5;
+
+}
+table-data, tr:nth-child(even){
+
+    background-color: #8b8b8b;
+    
+    }
