@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 JavaScript</title>
+</head>
+<body>
+    <h1>Week 6 JavaScript Lab</h1>
+<script> //Your JavaScript goes here
+
+var hours = Number(prompt(`How many hours per week do you work?`))
+
+var wage = Number(prompt(`What is your hourly wage? XX.XX`))
+
+hours = hours * 2
+var grossPay = hours * wage
+var uncleSam = grossPay * 0.20
+var netPay = grossPay - uncleSam
+
+console.log(`Your bi-weekly gross pay is: $${grossPay.toFixed(2)}\nUncle Sam's Share is $${uncleSam.toFixed(2)}\nYour Net pay is: $${netPay.toFixed(2)}`)
+
+alert(`Your bi-weekly gross pay is: $${grossPay.toFixed(2)}\nUncle Sam's Share is $${uncleSam.toFixed(2)}\nYour Net pay is: $${netPay.toFixed(2)}`)
+
+</script>
+
+
+
+</body>
+</html>
