@@ -10,9 +10,7 @@
 <body>
     <h1>Week 6 JavaScript Lab</h1>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore iste quas error, doloribus placeat alias
-        eligendi voluptatum, dolor modi voluptates exercitationem illo veritatis aut, assumenda praesentium enim.
-        Consequuntur, reiciendis quaerat?</p>
+    <p></p>
     <button>Call Function</button>
 
 
@@ -23,17 +21,18 @@
         var firstName = "Mason"
         var lastName = "Gagnon"
         var message = `Hello ${firstName} ${lastName}`;
+        var para = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, omnis, fuga neque, consequatur totam veritatis animi deserunt non doloribus quibusdam aliquid accusantium quidem reiciendis dolore dolorem commodi! Aliquam, eveniet vel."
         //alert(firstName + " " + lastName);
 
         console.log(`${firstName} ${lastName}`);
 
-        function outputToPage(tag, msg) {
+        function outputToPage(tag, msg, color) {
 
             document.querySelector(tag).innerHTML = msg;
-            document.querySelector(tag).style.color = "green";
+            document.querySelector(tag).style.color = color;
         }
         outputToPage("h1", message, "blue");
-        outputToPage("p", lastName, "green");
+        outputToPage("p", para, "green");
 
 
         //Example of event handler
@@ -55,6 +54,13 @@
             var result = Number(firstNumber) * (secondNumber)
 
             alert(`Here is your result: ${result}`)
+
+            var documentBody = document.querySelector("body");
+            var outputData = document.createElement("p");
+
+            outputData.innerHTML = `Your name is ${yourName} ${yourLastName}, <br> The result of your numbers is: ${result} <br> Thank you from ${firstName} ${lastName}`;
+
+            documentBody.appendChild(outputData);
 
         }
 
