@@ -1,62 +1,49 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Week 2 Files</title>
-<style type="text/css">
-	.border{border:1px solid black;}
-</style>
-<link rel="stylesheet" href="/nDnQufySMo28rW3r"/></head>
+	<meta charset="utf-8">
+	<title>Week 2 Files</title>
+	<style type="text/css">
+		.border {
+			border: 1px solid black;
+		}
+	</style>
+	<link rel="stylesheet" href="/nDnQufySMo28rW3r" />
+</head>
 
 <body>
 </body>
 
 <script type="text/javascript">
 	//Use this Array of objects to complete the assignment.
-	var people =[
-		{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
-		{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
-		{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
-		{first:"Kevin", last:"McCallister", credit:"Home Alone" },
-		{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
-		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
-		{first:"Marion", last:"Cobretti", credit:"Cobra" }
+	var people = [
+		{ first: "Jason", last: "Vorhees", credit: "Friday the 13th" },
+		{ first: "Freddy", last: "Krueger", credit: "A Nightmare on Elm Street" },
+		{ first: "Roger", last: "Rabbit", credit: "Who Framed Roger Rabbit" },
+		{ first: "Kevin", last: "McCallister", credit: "Home Alone" },
+		{ first: "Godzilla", last: "King of The Monsters", credit: "Godzilla" },
+		{ first: "Buzz", last: "Lightyear", credit: "Toy Story" },
+		{ first: "Marion", last: "Cobretti", credit: "Cobra" }
 	]
-	
-	document.querySelector('body');
-	for(let i=0; i <= people.length; i++)
-		{ var tempDiv = document.createElement(tempDiv)
-		tempDiv.setAttribute("id", people(i));
-		tempDiv.setAttribute("class")
-		tempDiv.className = "border"
 
-		for(key in object){
-			const para = document.createElement("p");
+	var body = document.querySelector('body');
+	for (let i = 0; i <= people.length; i++) {
+		var tempDiv = document.createElement('div')
+		tempDiv.setAttribute("id", `people${i}`);
+		tempDiv.setAttribute("style", "border:1px solid black")
+		
 
-			let firstNode = document.createTextNode(`${first}`); document.body.appendChild(Node);
-
-			let lastNode = document.createTextNode(`${last}`); document.body.appendChild(Node);
-
-			let creditNode = document.createTextNode(`${credit}`); document.body.appendChild(Node);
+		for (key in people[i]) {
+			//console.log(key, people[i][key]);
+			var para = document.createElement('p');
+			var msg = document.createTextNode(`${people[i][key]}`);
+			para.appendChild(msg);
+			tempDiv.appendChild(para);
 			
-			tempDiv = appendChild(para)
 		}
-		body = appendChild(tempDiv);
-
-
-
-
-
-
-		}
-
-
-
-
-
-
-
-
+		body.appendChild(tempDiv);
+	}
 </script>
 
 </html>
